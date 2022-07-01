@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
+.page{
+  background-color: rgb(30, 30, 30);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100vw;
   min-height: 100vh;
+  height: 100%;
+
+  overflow-x: hidden;
+}
+
+
+
+.login-div{
+  background-color: rgb(100, 100, 100);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  max-width: 300px;
+  width: 100%;
+  
+  padding: 20px;
+}
+
+.login-txt{
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.form{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.login-div input{
+  font-size: 16px;
+
+  margin-bottom: 20px;
+  padding: 6px;
+
+  border: none;
+  outline: none;
+  
+  border-bottom: 3px solid cyan;
+}
+
+button{
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login-footer{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-footer button{
+  background-color: transparent;
+  border: none;
+  color: cyan;
+  font-weight: 600;
+  font-size: 16px;
 }
